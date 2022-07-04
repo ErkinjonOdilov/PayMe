@@ -37,4 +37,14 @@ public class Informations <T> {
     public int getSize(){
         return user.length;
     }
-}
+
+    public void add(long num) {
+        Object[] newValues = new Object[size + 1];
+        for (int i = 0; i < size; i++) {
+            newValues[i] = user[i];
+        }
+        newValues[size] = num;
+        user = newValues;
+        size++;
+    }
+    }

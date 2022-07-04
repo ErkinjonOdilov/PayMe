@@ -4,6 +4,7 @@ public interface Methods {
 
     void SignIN();
     void registration();
-    int fillBalance();
-    int transferBalance();
+    void fillBalance();
+    void transferBalance();
+
 }
